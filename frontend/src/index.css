@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-gradient-flow {
+  animation: gradientFlow 3s ease infinite;
+}
+
+/* High-Contrast Dark Mode Accessibility Styling */
+.dark, .dark body {
+  background-color: #09090b !important;
+  color: #fafafa !important;
+}
+
+/* Base content containers */
+.dark main,
+.dark .bg-slate-50,
+.dark .bg-slate-100\/50,
+.dark .bg-slate-50\/50 {
+  background-color: #09090b !important;
+  color: #fafafa !important;
+}
+
+.dark header,
+.dark .bg-white,
+.dark .bg-white\/80,
+.dark .bg-white\/95 {
+  background-color: #121214 !important;
+  color: #f4f4f5 !important;
+  border-color: #27272a !important;
+}
+
+/* High contrast texts */
+.dark .text-slate-900,
+.dark .text-slate-800,
+.dark .text-slate-700,
+.dark .text-slate-600,
+.dark .text-gray-900,
+.dark .text-gray-800,
+.dark .text-gray-700,
+.dark .text-emerald-900,
+.dark .text-indigo-900,
+.dark .text-orange-900 {
+  color: #fafafa !important;
+}
+
+.dark .text-slate-500,
+.dark .text-slate-400,
+.dark .text-gray-500,
+.dark .text-gray-400 {
+  color: #a1a1aa !important;
+}
+
+.dark .text-slate-300,
+.dark .text-gray-300 {
+  color: #e4e4e7 !important;
+}
+
+/* Borders and dividers */
+.dark .border,
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-300\/50,
+.dark .border-slate-100\/50,
+.dark .border-slate-200\/60,
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .border-emerald-50\/80,
+.dark .border-emerald-100,
+.dark .border-emerald-50,
+.dark .border-indigo-50\/80,
+.dark .border-indigo-100,
+.dark .border-indigo-50,
+.dark .border-orange-50\/80,
+.dark .border-orange-100,
+.dark .border-orange-50 {
+  border-color: #27272a !important;
+}
+
+/* Input elements */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #1a1a1e !important;
+  color: #ffffff !important;
+  border-color: #3f3f46 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #71717a !important;
+}
+
+/* Cards & widgets */
+.dark .shadow-sm,
+.dark .shadow-md,
+.dark .shadow-lg,
+.dark .shadow-xl,
+.dark .shadow-2xl {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark .bg-emerald-50,
+.dark .bg-indigo-50,
+.dark .bg-orange-50 {
+  background-color: #451a03 !important;
+  color: #ffedd5 !important;
+}
+
+.dark .text-emerald-700,
+.dark .text-emerald-800,
+.dark .text-indigo-700,
+.dark .text-indigo-800,
+.dark .text-orange-700,
+.dark .text-orange-800 {
+  color: #f97316 !important;
+}
+
+.dark .bg-amber-50 {
+  background-color: #78350f !important;
+  color: #fcd34d !important;
+}
+
+.dark .text-amber-700,
+.dark .text-amber-800 {
+  color: #fbbf24 !important;
+}
+
+.dark .bg-blue-50 {
+  background-color: #1e3a8a !important;
+  color: #93c5fd !important;
+}
+
+.dark .text-blue-700,
+.dark .text-blue-800 {
+  color: #60a5fa !important;
+}
+
+/* Chat bubble styling */
+.dark .bg-emerald-500,
+.dark .bg-indigo-500,
+.dark .bg-indigo-600,
+.dark .bg-orange-500,
+.dark .bg-orange-600 {
+  background-color: #ea580c !important;
+}
+
+.dark .bg-emerald-600,
+.dark .bg-indigo-700,
+.dark .bg-orange-700 {
+  background-color: #c2410c !important;
+}
+
+/* Inboxes and Modals */
+.dark .bg-slate-900\/40 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+

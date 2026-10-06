@@ -1,0 +1,8 @@
+# One movie title per line = what you want shown as "trending now".
+# OMDb has no now-playing endpoint, so update this list when new films release.
+# These are EXAMPLES - replace them with films actually running in cinemas.
+Inception
+Interstellar
+Dune: Part Two
+Oppenheimer
+The Dark Knight
